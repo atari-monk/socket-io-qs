@@ -82,7 +82,9 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var socket = io.connect("http://localhost:3000");
+      //var url = "http://localhost:3000";
+      var url = "https://atari-monk-chat-server.azurewebsites.net/";
+      var socket = io.connect(url);
 
       $(document.body).on("click", "#btnSend", () => {
         console.log("click button");
